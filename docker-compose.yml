@@ -1,0 +1,10 @@
+version: '3'
+services:
+  momo-talk:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/node.dockerfile
+    tty: true
+    volumes:
+      - "./:/home/node/momo-talk"
+    working_dir: /home/node/momo-talk
