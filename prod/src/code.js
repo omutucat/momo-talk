@@ -13,8 +13,8 @@ const DISCORD_WEBHOOK_URL = PropertiesService.getScriptProperties().getProperty(
 const FILTER_TARGET_WORDS = PropertiesService.getScriptProperties().getProperty('FILTER_TARGET_WORDS').split(',');
 const BORDER_CLOSETASK = PropertiesService.getScriptProperties().getProperty('BORDER_CLOSETASK');
 //ユウカのセリフ
-const MESSAGE_TO_CLOSETASK = PropertiesService.getScriptProperties().getProperty('MESSAGE_TO_CLOSETASK');
-const MESSAGE_TO_EXPIREDTASK = PropertiesService.getScriptProperties().getProperty('MESSAGE_TO_EXPIREDTASK');
+const MESSAGE_TO_CLOSETASK = "先生！以下のタスクが期限間近です。後回しにせず、早く取り掛かってくださいね。";
+const MESSAGE_TO_EXPIREDTASK = "先生？以下のタスクはもう期限を過ぎていますよ！全く、しっかりしてください！";
 
 //定数
 const ONEHOUR_BY_MILISEC = 3600000;
