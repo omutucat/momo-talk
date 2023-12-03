@@ -3,6 +3,6 @@
 	"name": "momo-talk",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "momo-talk",
-    "workspaceFolder": "/home/node/momo-talk",
+    "workspaceFolder": "/home/node/momo-talk/prod",
   "remoteUser": "node"
 }

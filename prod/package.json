@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo '{\"scriptId\":\"1A0TdFXNfH6Kw7xub_w-eJ1XU6ZHorKKOfwzokya0WQvaEu5AH1Uu62fY\",\"rootDir\":\"/home/node/momo-talk/prod/src\",\"projectId\":\"intricate-grove-391903\"}' > ./.clasp.json && clasp run"
+    "init": "echo '{\"scriptId\":\"1A0TdFXNfH6Kw7xub_w-eJ1XU6ZHorKKOfwzokya0WQvaEu5AH1Uu62fY\",\"rootDir\":\"/home/node/momo-talk/prod/src\",\"projectId\":\"intricate-grove-391903\"}' > ./.clasp.json"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  }
 }
