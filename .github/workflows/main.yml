@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: push
         run: |
-          echo "$CLASPRC_JSON" ~/.clasprc.json
+          echo "$CLASPRC_JSON" > ~/.clasprc.json
           echo "$CLASP_JSON" > .clasp.json
           npx @google/clasp push
