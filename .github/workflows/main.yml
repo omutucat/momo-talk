@@ -6,9 +6,12 @@ jobs:
   job1:
     name: push to gas
     runs-on: ubuntu-latest
+    env:
+      CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+      CLASP_JSON: ${{ secrets.CLASP_JSON }}
     steps:
-      - name: Print hello
+      - name: push
         run: |
-          cp $CLASPRC_JSON ~/.clasprc.json
-          echo "{\"scriptId\":\"${SCRIPT_ID}\"}" > .clasp.json
+          echo "$CLASPRC_JSON" ~/.clasprc.json
+          echo "$CLASP_JSON" > .clasp.json
           npx @google/clasp push
