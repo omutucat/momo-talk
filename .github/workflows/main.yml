@@ -17,5 +17,4 @@ jobs:
           echo $CLASPRC_JSON > ~/.clasprc.json
           cd prod/
           echo $CLASP_JSON > .clasp.json
-          ls
-          npx @google/clasp push
+          npx @google/clasp push --force
