@@ -10,6 +10,8 @@ jobs:
       CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
       CLASP_JSON: ${{ secrets.CLASP_JSON }}
     steps:
+      - name: Setup repository
+        uses: actions/checkout@v2
       - name: push
         run: |
           echo $CLASPRC_JSON > ~/.clasprc.json
