@@ -1,8 +1,22 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "momo-talk",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "momo-talk",
-    "workspaceFolder": "/home/node/momo-talk",
-  "remoteUser": "node"
+  "name": "momo-talk",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "momo-talk",
+  "workspaceFolder": "/home/node/momo-talk/",
+  "remoteUser": "node",
+  "postCreateCommand": "cd prod/ && npm run init && git config --global core.autocrlf input",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "oderwat.indent-rainbow",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
