@@ -1,7 +1,13 @@
+name: Push to GAS
+
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '.github/workflows/**'
+  workflow_dispatch:
+    
 jobs:
   job1:
     name: push to gas
@@ -11,7 +17,7 @@ jobs:
       CLASP_JSON: ${{ secrets.CLASP_JSON }}
     steps:
       - name: Setup repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: push
         run: |
           echo $CLASPRC_JSON > ~/.clasprc.json
