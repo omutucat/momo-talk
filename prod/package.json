@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init": "echo '{\"scriptId\":\"1A0TdFXNfH6Kw7xub_w-eJ1XU6ZHorKKOfwzokya0WQvaEu5AH1Uu62fY\",\"rootDir\":\"/home/node/momo-talk/prod/src\",\"projectId\":\"intricate-grove-391903\"}' > ./.clasp.json"
+    "init": "echo '{\"scriptId\":\"1A0TdFXNfH6Kw7xub_w-eJ1XU6ZHorKKOfwzokya0WQvaEu5AH1Uu62fY\",\"rootDir\":\"/home/node/momo-talk/prod/src\",\"projectId\":\"intricate-grove-391903\"}' > ./.clasp.json",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.78",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.0"
+  }
 }
