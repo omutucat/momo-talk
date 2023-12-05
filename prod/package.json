@@ -7,8 +7,5 @@
     "init": "echo '{\"scriptId\":\"1A0TdFXNfH6Kw7xub_w-eJ1XU6ZHorKKOfwzokya0WQvaEu5AH1Uu62fY\",\"rootDir\":\"/home/node/momo-talk/prod/src\",\"projectId\":\"intricate-grove-391903\"}' > ./.clasp.json"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@google/clasp": "^2.4.2"
-  }
+  "license": "ISC"
 }
